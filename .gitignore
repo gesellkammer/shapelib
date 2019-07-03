@@ -3,3 +3,5 @@ build/
 *.egg*
 *.pyc
 __*
+*.bak
+__pycache__/
