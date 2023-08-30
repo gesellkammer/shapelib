@@ -1,0 +1,28 @@
+[project]
+name = "shapelib"
+version = "0.2.0"
+description = "Python utilities to work with shapely (shape creation, rasterization, plotting)"
+authors = [
+    {name = "Eduardo Moguillansky", email = "eduardo.moguillansky@gmail.com"},
+]
+dependencies = [
+	"numpy",
+	"matplotlib",
+	"shapely",
+	"descartes",
+	"rasterio"
+]
+requires-python = ">=3.8"
+readme = "README.rst"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["shapelib"]
+
+[tool.setuptools.package-data]
+shapelib = ['py.typed']
+
